@@ -1,13 +1,14 @@
 import './Titlepage.css'
 
-const Titlepage = ({ myNewsData })=> {
+const Titlepage = ({ apiNews })=> {
 
-    console.log(myNewsData)
+    // console.log(myNewsData)
 
     return (
         <div className='title-outter'>
+            <h2>Top Headlines</h2>
             <div className='article-cont'>
-                {myNewsData.map((news, index)=> {
+                {apiNews.map((news, index)=> {
                     return <div key={index} className='articles'>
                         <h2>{news.title}</h2>
                         <img src={news.urlToImage} alt='' />

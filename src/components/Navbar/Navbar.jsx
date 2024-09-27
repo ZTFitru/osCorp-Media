@@ -14,9 +14,13 @@ const Navbar = ()=> {
             </div>
             <nav>
                 <ul>
+                    <li>General</li>
                     <li>Business</li>
                     <li>Sports</li>
                     <li>Entertainment</li>
+                    <li>Health</li>
+                    <li>Science</li>
+                    <li>Technology</li>
                 </ul>
             </nav>
         </header>
