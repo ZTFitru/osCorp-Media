@@ -16,7 +16,7 @@ const Titlepage = ({ apiNews })=> {
                             <Link to={`/article/${news.source.id}/${index}`} className='article-title'>
                                 <h2>{news.title}</h2>
                             </Link>
-                                <img src={news.urlToImage || DefaultImg} alt='' />
+                                <img src={news.urlToImage || DefaultImg} alt={`Headshot about ${news.title}`} />
                                 <p>{news.publishedAt}</p>
                         </div>
                     )

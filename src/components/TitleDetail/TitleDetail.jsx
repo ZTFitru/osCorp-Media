@@ -30,7 +30,7 @@ const TitleDetail = ()=> {
                 <h2>{detail.title}</h2>
                 <p>By: <span>{detail.author}</span></p> 
                 <p>Date: <span>{new Date(detail.publishedAt).toLocaleDateString()}</span></p>
-                <img src={detail.urlToImage} alt='' />
+                <img src={detail.urlToImage} alt={`Headshot about ${detail.title}`} />
                 <p className='description'>{detail.description}</p>
                 <p className='content'>{detail.content}
                     <a href={detail.url} target='_black' rel='noopener noreferrer'>

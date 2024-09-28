@@ -1,11 +1,15 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css'
+import homeBtn from '../../assets/homeBtn.png'
 
 const Navbar = ()=> {
 
     return (
         <header className='nav-outter'>
             <div className='top-nav'>
+                <Link to={'/'} className='logo'>
+                    <img src={homeBtn} alt="" />
+                </Link>
                 <div className='title'>
                     <h1>OSCORP MEDIA</h1>
                 </div>

@@ -9,6 +9,13 @@
     width: 100%;
 }
 
+.logo {
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 .title {
     display: flex;
     align-items: center;
@@ -33,10 +40,15 @@ nav {
         color: #000000;
         cursor: pointer;
     }
+    a {
+        color: black;
+    }
 }
 
-li:hover {
-    color: #40875b;
+
+
+li a:hover {
+    color: #005D33;
 }
 
 @media only screen and (max-width: 480px) {

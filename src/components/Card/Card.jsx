@@ -13,9 +13,11 @@ const Card = ()=> {
     useEffect(()=> {
         getNewsByCategory(category)
         .then(data => {
-            console.log(data.articles)
+            // const removedArticleFilter = data.articles.filter(article => article && article.title && article.url)
+            // setSelectedNews(removedArticleFilter)
             setSelectedNews(data.articles)
-        })
+        }
+        )
         .catch(err => console.log(err))
     }, [category])
 
@@ -26,11 +28,11 @@ const Card = ()=> {
                 <div className='card-cont'>
                 {selectedNews.map((news, index) => {
                     return (<div key={index} className='cards'>
-                        <Link to={`/${category}/article/${index}`}>
+                        <Link to={`/${category}/article/${index}`} className='card-title'>
                             <h3>{news.title}</h3>
                         </Link>
-                        <img src={news.urlToImage || DefaultImg} alt='' />
-                        <p>{news.publishedAt}</p>
+                        <img src={news.urlToImage || DefaultImg} alt={`Headshot about ${news.title}`} />
+                        <p>Date: <span>{new Date(news.publishedAt).toLocaleDateString()}</span></p>
                     </div>
                     )
                 })}

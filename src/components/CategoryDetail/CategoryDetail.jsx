@@ -17,9 +17,16 @@ const CategoryDetail = ()=> {
                 console.log('me',res)
                 const data = await res.json()
                 if(data.articles && data.articles[index]) {
-                    console.log('this', data.articles[index])
-                    setDetail(data.articles[index])
+                    // setDetail(data.articles[index])
+                    const filteredArticles = data.articles[index]
+                    if(filteredArticles === '[Removed]') {
+                        setDetail(null)
+                    } else {
+                        setDetail(filteredArticles)
+                    }
                 } 
+                // const removedArticleFilter = data.articles.filter(article => article && article.title && article.url)
+                // setDetail(removedArticleFilter)
             } catch (error) {
                 console.log('Error something idk', error)
             }
@@ -34,9 +41,9 @@ const CategoryDetail = ()=> {
         <div className='cat-detail-out'>
             <div className='cat-detail-cont'>
                 <h2>{detail.title}</h2>
-                <p>By: <span>{detail.author}</span></p>  
+                <p>By: <span>{detail.author || 'Unknown'}</span></p>  
                 <p>Date: <span>{new Date(detail.publishedAt).toLocaleDateString()}</span></p>
-                <img src={detail.urlToImage} alt='' />
+                <img src={detail.urlToImage} alt={`Headshot about ${detail.title}`} />
                 <p className='cat-description'>{detail.description}</p>
                 <p className='cat-content'>{detail.content}
                     <a href={detail.url} target='_black' rel='noopener noreferrer'>

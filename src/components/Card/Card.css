@@ -26,3 +26,13 @@
         margin: 0 15px 15px;
     }
 }
+
+.card-title {
+    h3 {
+        color: black;
+    }
+}
+
+.card-title h3:hover {
+    color: #005D33;
+}
