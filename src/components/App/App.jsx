@@ -6,7 +6,8 @@ import {getTopHeadlineNews} from '../../ApiCalls'
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Card from '../Card/Card'
-import CardDetail from '../CardDetail/CardDetail'
+import TitleDetail from '../TitleDetail/TitleDetail'
+import CategoryDetail from '../CategoryDetail/CategoryDetail'
 
 const App = ()=> {
     
@@ -23,9 +24,18 @@ const App = ()=> {
         <main>
             <Navbar />
             <Routes>
-                <Route path='/' element={<Titlepage apiNews={apiNews} />} />
+                {/* first draft */}
+                {/* <Route path='/' element={<Titlepage apiNews={apiNews} />} />
+                <Route path='/article/:category/:index' element={<CategoryDetail />} />
                 <Route path='/:category' element={<Card />} />
-                <Route path='/article/:sourceId/:index' element={<CardDetail />} />
+                <Route path='/article/:sourceId/:index' element={<TitleDetail />} /> */}
+                {/* first draft */}
+                {/* <Route path='/article/:category/:index' element={<CategoryDetail />} /> */}
+                <Route path='/' element={<Titlepage apiNews={apiNews} />} />
+                <Route path='/article/:sourceId/:index' element={<TitleDetail />} />
+                <Route path='/:category' element={<Card />} />
+                <Route path='/:category/article/:index' element={<CategoryDetail />} />
+                
             </Routes>
         </main>
     )
