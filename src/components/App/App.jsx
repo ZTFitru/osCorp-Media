@@ -1,15 +1,14 @@
 import Navbar from '../Navbar/Navbar'
 import './App.css'
-// import NewsData from '../../MockData.json'
 import Titlepage from '../Titlepage/Titlepage'
 import { useEffect } from 'react'
 import {getTopHeadlineNews} from '../../ApiCalls'
 import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Card from '../Card/Card'
 
 const App = ()=> {
     
-
-    // const myNewsData = NewsData.articles
 
     const [apiNews, setApiNews] = useState([])
 
@@ -22,8 +21,10 @@ const App = ()=> {
     return (
         <main>
             <Navbar />
-            {/* <Titlepage myNewsData={myNewsData} /> */}
-            <Titlepage apiNews={apiNews} />
+            <Routes>
+                <Route path='/' element={<Titlepage apiNews={apiNews} />} />
+                <Route path='/:category' element={<Card />} />
+            </Routes>
         </main>
     )
 }

@@ -1,8 +1,9 @@
 import './Titlepage.css'
+import DefaultImg from '../../assets/No_image_available.png'
 
 const Titlepage = ({ apiNews })=> {
 
-    // console.log(myNewsData)
+
 
     return (
         <div className='title-outter'>
@@ -11,7 +12,7 @@ const Titlepage = ({ apiNews })=> {
                 {apiNews.map((news, index)=> {
                     return <div key={index} className='articles'>
                         <h2>{news.title}</h2>
-                        <img src={news.urlToImage} alt='' />
+                        <img src={news.urlToImage || DefaultImg} alt='' />
                         <p>{news.publishedAt}</p>
                     </div>
                 })}

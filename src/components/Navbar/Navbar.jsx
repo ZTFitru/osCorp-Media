@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 
 const Navbar = ()=> {
@@ -5,22 +6,19 @@ const Navbar = ()=> {
     return (
         <header className='nav-outter'>
             <div className='top-nav'>
-                {/* <div className='search-btn'>
-                    <button>🔍</button>
-                </div> */}
                 <div className='title'>
                     <h1>OSCORP MEDIA</h1>
                 </div>
             </div>
             <nav>
                 <ul>
-                    <li>General</li>
-                    <li>Business</li>
-                    <li>Sports</li>
-                    <li>Entertainment</li>
-                    <li>Health</li>
-                    <li>Science</li>
-                    <li>Technology</li>
+                    <li><NavLink to={'/general'} >General</NavLink></li>
+                    <li><NavLink to={'/business'} >Business</NavLink></li>
+                    <li><NavLink to={'/sports'} >Sports</NavLink></li>
+                    <li><NavLink to={'/entertainment'} >Entertainment</NavLink></li>
+                    <li><NavLink to={'/health'} >Health</NavLink></li>
+                    <li><NavLink to={'/science'} >Science</NavLink></li>
+                    <li><NavLink to={'/technology'} >Technology</NavLink></li>
                 </ul>
             </nav>
         </header>
