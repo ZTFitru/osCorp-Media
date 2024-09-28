@@ -27,3 +27,12 @@
     }
 }
 
+.article-title {
+    h2 {
+        color: black;
+    }
+}
+
+.article-title h2:hover {
+    color: #005D33;
+}

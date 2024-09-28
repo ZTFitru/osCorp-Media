@@ -13,12 +13,11 @@ const Titlepage = ({ apiNews })=> {
                 {apiNews.map((news, index)=> {
                     return (
                         <div key={index} className='articles'>
-                            <Link to={`/article/${news.source.id}/${index}`}>
+                            <Link to={`/article/${news.source.id}/${index}`} className='article-title'>
                                 <h2>{news.title}</h2>
                             </Link>
                                 <img src={news.urlToImage || DefaultImg} alt='' />
                                 <p>{news.publishedAt}</p>
-                            
                         </div>
                     )
                 })}

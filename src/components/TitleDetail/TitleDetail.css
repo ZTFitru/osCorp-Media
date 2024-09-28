@@ -1,0 +1,39 @@
+.title-detail-out {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; */
+    width: 100%;
+}
+
+.title-detail-cont {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap;
+    align-items: center; */
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    p {
+        margin-top: 0;
+        margin-left: 5px;
+    }
+    img {
+        margin-left: 5px;
+        /* align-items: center; */
+        width: 70%;
+    }
+    span {
+        font-style: italic;
+        text-decoration: underline;
+    }
+}
+
+.description {
+    font-weight: 200;
+}
+
+.content {
+    font-weight: bold;
+}

@@ -10,7 +10,6 @@ export const getTopHeadlineNews = async ()=> {
 
 export const getNewsByCategory = async (category)=> {
     const url = `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`
-    // const url = await fetch(`https://newsapi.org/v2/top-headlines/sources?category=${category}apiKey=${import.meta.env.VITE_NEWS_API_KEY}`)
     const res = await fetch(url)
     if(!res.ok) {
         throw new Error('Bad Network')

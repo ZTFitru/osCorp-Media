@@ -25,13 +25,20 @@ const TitleDetail = ()=> {
 
 
     return (
-        <div>
-            <h2>{detail.title}</h2>
-            <p>{detail.author}</p> 
-            <p>{detail.publishedAt}</p>
-            <img src={detail.urlToImage} alt='' />
-            <p>{detail.description}</p>
-            <p>{detail.content}</p>
+        <div className='title-detail-out'>
+            <div className='title-detail-cont'>
+                <h2>{detail.title}</h2>
+                <p>By: <span>{detail.author}</span></p> 
+                <p>Date: <span>{new Date(detail.publishedAt).toLocaleDateString()}</span></p>
+                <img src={detail.urlToImage} alt='' />
+                <p className='description'>{detail.description}</p>
+                <p className='content'>{detail.content}
+                    <a href={detail.url} target='_black' rel='noopener noreferrer'>
+                        <button>Read more</button>
+                    </a>
+                </p>
+                
+            </div>
         </div>
     )
 }

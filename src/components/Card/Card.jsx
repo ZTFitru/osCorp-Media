@@ -26,7 +26,7 @@ const Card = ()=> {
                 <div className='card-cont'>
                 {selectedNews.map((news, index) => {
                     return (<div key={index} className='cards'>
-                        <Link to={`/${category}/article/${index}`} onClick={()=> console.log(`Nav to article ${index} in ${category}`)}>
+                        <Link to={`/${category}/article/${index}`}>
                             <h3>{news.title}</h3>
                         </Link>
                         <img src={news.urlToImage || DefaultImg} alt='' />

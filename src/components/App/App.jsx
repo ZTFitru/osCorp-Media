@@ -24,18 +24,10 @@ const App = ()=> {
         <main>
             <Navbar />
             <Routes>
-                {/* first draft */}
-                {/* <Route path='/' element={<Titlepage apiNews={apiNews} />} />
-                <Route path='/article/:category/:index' element={<CategoryDetail />} />
-                <Route path='/:category' element={<Card />} />
-                <Route path='/article/:sourceId/:index' element={<TitleDetail />} /> */}
-                {/* first draft */}
-                {/* <Route path='/article/:category/:index' element={<CategoryDetail />} /> */}
                 <Route path='/' element={<Titlepage apiNews={apiNews} />} />
                 <Route path='/article/:sourceId/:index' element={<TitleDetail />} />
                 <Route path='/:category' element={<Card />} />
                 <Route path='/:category/article/:index' element={<CategoryDetail />} />
-                
             </Routes>
         </main>
     )
