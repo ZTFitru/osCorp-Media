@@ -1,18 +1,18 @@
-.title-outter {
+.card-outter {
     padding: 20px;
 }
 
-.article-cont {
+.card-cont {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.articles {
+.cards {
     border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
-    h2 {
+    h3 {
         font-size: 1.5rem;
         margin: 15px;
     }
@@ -27,12 +27,12 @@
     }
 }
 
-.article-title {
-    h2 {
+.card-title {
+    h3 {
         color: black;
     }
 }
 
-.article-title h2:hover {
+.card-title h3:hover {
     color: #005D33;
 }
