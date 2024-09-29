@@ -1,0 +1,58 @@
+{
+    "status": "ok",
+    "totalResults": 36,
+    "articles": [
+        {
+        "source": {
+            "id": "nbc-news",
+            "name": "NBC News"
+        },
+        "author": "Jonathan Dienst, Tom Winter, Rich Schapiro",
+        "title": "NYC Mayor Eric Adams charged with bribery and wire fraud in scheme spanning nearly 10 years - NBC News",
+        "description": "New York City Mayor Eric Adams has been hit with five federal charges – including wire fraud, bribery and solicitation of a contribution by a foreign national – according to a sprawling 57-page federal indictment unsealed Thursday.",
+        "url": "https://www.nbcnews.com/news/us-news/nyc-mayor-eric-adams-charged-bribery-wire-fraud-scheme-spanning-nearly-rcna172804",
+        "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2024-09/240926-eric-adams-wc-1132-2837b6.jpg",
+        "publishedAt": "2024-09-26T16:36:15Z",
+        "content": "New York City Mayor Eric Adams has been hit with five federal charges including wire fraud, bribery and solicitation of a contribution by a foreign national according to a sprawling 57-page federal i… [+6292 chars]"
+        },
+        {
+        "source": {
+            "id": "google-news",
+            "name": "Google News"
+        },
+        "author": "The New York Times",
+        "title": "U.S. Pushes Israel-Hezbollah Cease-Fire in Lebanon: Live Updates - The New York Times",
+        "description": null,
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVWdKLWNESVYwc1NPX1RtNHU4TVZEVi00ZmU4cVdrRDFTSVE4Y1FvY0k3YlNHLVV3dUNtZDdQbWZtNTlXUkpvUXdLWWRhUGVtaXdFa3NGZzVvanc2eVdkR2dFTHBaSTNWRHg4SXBoNDZQVXdpb1RrQXEyRGI3XzZYaFNn?oc=5",
+        "urlToImage": null,
+        "publishedAt": "2024-09-26T16:12:25Z",
+        "content": null
+        },
+        {
+            "source": {
+                "id": "cnn",
+            "name": "CNN"
+            },
+            "author": "Kevin Liptak, MJ Lee",
+            "title": "Zelensky to make urgent in-person plea to Biden and Harris as Ukraine braces for possibility of a Trump presidency - CNN",
+            "description": "Ukrainian President Volodymyr Zelensky’s visit to the White House on Thursday could be his final chance to convince a receptive American president of his country’s war aims.",
+            "url": "https://www.cnn.com/2024/09/26/politics/zelensky-biden-harris-washington-visit/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2173571774-1.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2024-09-26T16:12:00Z",
+            "content": "Ukrainian President Volodymyr Zelenskys visit to the White House on Thursday could be his final chance to convince a receptive American president of his countrys war aims.\r\nThe precise details of the… [+9112 chars]"
+            },
+            {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Ashley Strickland",
+            "title": "Sea robins are fish with ‘the wings of a bird and multiple legs like a crab’ - CNN",
+            "description": "Some types of “walking” fish called sea robins can use their taste bud-covered legs to detect prey buried beneath the sandy covering of the seafloor.",
+            "url": "https://www.cnn.com/2024/09/26/science/sea-robins-walk-taste-seafloor/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/prionotus-carolinus-1-credit-anik-grearson.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2024-09-26T15:52:00Z",
+            "content": "Sign up for CNNs Wonder Theory science newsletter. Explore the universe with news on fascinating discoveries, scientific advancements and more.\r\nSome types of sea robins, a peculiar bottom-dwelling o… [+6984 chars]"
+            }
+    ]
+}
