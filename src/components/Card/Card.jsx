@@ -13,8 +13,6 @@ const Card = ()=> {
     useEffect(()=> {
         getNewsByCategory(category)
         .then(data => {
-            // const removedArticleFilter = data.articles.filter(article => article && article.title && article.url)
-            // setSelectedNews(removedArticleFilter)
             setSelectedNews(data.articles)
         }
         )

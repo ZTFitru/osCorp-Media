@@ -3,7 +3,6 @@ import './TitleDetail.css'
 import { useEffect, useState } from 'react';
 
 const TitleDetail = ()=> {
-    console.log('hello')
     const { sourceId, index } = useParams()
     const [detail, setDetail] = useState('')
 
