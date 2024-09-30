@@ -1,7 +1,7 @@
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Newspaper.png" alt="Newspaper" width="25" height="25" /> OsCorp Media
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Warning.png" alt="Warning" width="25" height="25" /> Overview:
- OsCorp Media is a news React app that lets users be informed about top headlines from BBC and gives the user to select news based on categories. Categories or interests like `sports`, `business`, `entertainment`, `general`, `health`, `science`, and `technology`. 
+ OsCorp Media is a news React app that lets users be informed about top headlines from BBC and gives the user to select news based on categories. Categories or interests like `sports`, `business`, `entertainment`, `general`, `health`, `science`, and `technology`. This was a take home challenge where we were pulling articles from the `NewsApi` to create a news reader application. 
 
  ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Pen.png" alt="Pen" width="25" height="25" /> Installation:
 1. Decide where you want to clone this repo in `YOUR` terminal.
