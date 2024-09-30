@@ -5,6 +5,7 @@ import './CategoryDetail.css'
 const CategoryDetail = ()=> {
     const { category, index } = useParams()
     const [detail, setDetail] = useState('')
+    const [error, setError] = useState('')
 
     useEffect(()=> {
         const getNewsByCategorys = async ()=> {
@@ -16,13 +17,15 @@ const CategoryDetail = ()=> {
                     setDetail(data.articles[index])
                 }
             } catch (error) {
-                console.log('Error something idk', error)
+                setError(error)
             }
         }
         getNewsByCategorys()
     }, [category, index])
 
-    
+    if(error) {
+        return <p>Error: {error}</p>
+    }
    
 
     return (

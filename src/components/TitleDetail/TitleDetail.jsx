@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 const TitleDetail = ()=> {
     const { sourceId, index } = useParams()
     const [detail, setDetail] = useState('')
+    const [error, setError] = useState('')
+
 
     useEffect(()=> {
         const getSingleHeadlineNews = async ()=> {
@@ -15,12 +17,15 @@ const TitleDetail = ()=> {
                     setDetail(data.articles[index])
                 }
             } catch (error) {
-                console.log('Error something idk', error)
+                setError(error)
             }
         }
         getSingleHeadlineNews()
     }, [sourceId, index])
 
+    if(error) {
+        return <p>Error: {error}</p>
+    }
 
 
     return (
