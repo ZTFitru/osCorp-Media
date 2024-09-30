@@ -19,7 +19,6 @@ const App = ()=> {
     useEffect(()=> {
         getTopHeadlineNews()
         .then(data => {
-            console.log(data.articles)
             const newArticles = data.articles
             const removedArticles = newArticles.filter(news => !news.title.includes('[Removed'))
             setApiNews(removedArticles)
