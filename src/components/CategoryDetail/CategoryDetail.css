@@ -1,16 +1,10 @@
 .cat-detail-out {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center; */
     width: 100%;
 }
 
 .cat-detail-cont {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap;
-    align-items: center; */
     h2 {
         font-size: 2rem;
         text-align: center;
@@ -21,12 +15,10 @@
     }
     img {
         margin-left: 5px;
-        /* align-items: center; */
         width: 70%;
     }
     span {
         font-style: italic;
-        /* text-decoration: underline; */
     }
     button {
         background-color: #2C3E50;
