@@ -14,7 +14,9 @@ const Card = ()=> {
     useEffect(()=> {
         getNewsByCategory(category)
         .then(data => {
-            setSelectedNews(data.articles)
+            const newArticles = data.articles
+            const removedArticles = newArticles.filter(news => !news.title.includes('[Removed'))
+            setSelectedNews(removedArticles)
         }
         )
         .catch(err => setError(err))
