@@ -12,9 +12,7 @@ const CategoryDetail = ()=> {
                 const res = await fetch(`https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`)
                
                 const data = await res.json()
-                console.log(data)
                 if(data.articles && data.articles[index]) {
-                    console.log('this', data.articles[index])
                     setDetail(data.articles[index])
                 }
             } catch (error) {
