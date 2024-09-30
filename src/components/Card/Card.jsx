@@ -13,6 +13,7 @@ const Card = ()=> {
     useEffect(()=> {
         getNewsByCategory(category)
         .then(data => {
+            console.log(data.articles)
             setSelectedNews(data.articles)
         }
         )

@@ -15,7 +15,12 @@ describe('template spec', () => {
     cy.get('h2').should('be.visible')
     cy.get('.title-detail-cont > img').should('be.visible')
     cy.get('button').should('be.visible')
+  })
+
+  it('should be able to return home', ()=> {
     cy.get('.logo > img').click()
     cy.url().should('include', 'http://localhost:5173/')
   })
+
+  
 })
