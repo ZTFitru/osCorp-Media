@@ -1,14 +1,13 @@
 import './Titlepage.css'
 import DefaultImg from '../../assets/No_image_available.png'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const Titlepage = ({ apiNews, error })=> {
 
-
-
     return (
         <div className='title-outter'>
-            <h2>Top Headlines</h2>
+            <h2>TOP HEADLINES</h2>
             <div className='article-cont'>
                 {error ? (
                     <p>Error getting articles</p>
@@ -21,12 +20,22 @@ const Titlepage = ({ apiNews, error })=> {
                                 <h2>{news.title}</h2>
                             </Link>
                                 <img src={news.urlToImage || DefaultImg} alt={`Headshot about ${news.title}`} />
-                                <p>{news.publishedAt}</p>
+                                <p>{new Date(news.publishedAt).toLocaleString()}</p>
                         </div>
                     ))
                 )}
             </div>
         </div>
+    )
+}
+
+Titlepage.propTypes = {
+    apiNews: PropTypes.arrayOf(
+        PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            urlToImage: PropTypes.string.isRequired,
+            publishedAt: PropTypes.string.isRequired
+        })
     )
 }
 
