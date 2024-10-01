@@ -6,8 +6,8 @@ const Navbar = ()=> {
 
     return (
         <header className='nav-outter'>
-            <div className='top-nav'>
-                <Link to={'/'} className='logo'>
+            <div className='top-nav' role='tablist'>
+                <Link to={'/'} className='logo' role='button' tabIndex={0} >
                     <img src={homeBtn} alt="" />
                 </Link>
                 <div className='title'>
