@@ -9,6 +9,7 @@ import Card from '../Card/Card'
 import TitleDetail from '../TitleDetail/TitleDetail'
 import CategoryDetail from '../CategoryDetail/CategoryDetail'
 import ErrorPage from '../ErrorPage/ErrorPage'
+import Footer from '../Footer/Footer'
 
 const App = ()=> {
     
@@ -36,6 +37,7 @@ const App = ()=> {
                 <Route path='/:category/article/:index' element={<CategoryDetail />} />
                 <Route path='*' element={<ErrorPage />} />
             </Routes>
+            <Footer />
         </main>
     )
 }

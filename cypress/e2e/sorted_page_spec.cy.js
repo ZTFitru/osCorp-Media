@@ -30,7 +30,7 @@ describe('template spec', () => {
     cy.get('ul > :nth-child(2) > a').click()
     cy.url().should('include', '#/business')
     cy.get('.logo > img').click()
-    cy.get('.title-outter > :nth-child(1)').should('contain', 'Top Headlines')
+    cy.get('.title-outter > :nth-child(1)').should('contain', 'TOP HEADLINES')
   })
 
 
