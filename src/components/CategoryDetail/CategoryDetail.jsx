@@ -26,13 +26,13 @@ const CategoryDetail = ()=> {
     if(error) {
         return <p>Error: {error}</p>
     }
-   
+    
 
     return (
         <div className='cat-detail-out'>
             <div className='cat-detail-cont'>
                 <h2>{detail.title}</h2>
-                <p>By: <span>{detail.author || 'Unknown'}</span></p>  
+                <p>By: <span>{detail.author || 'Unknown'}</span></p>
                 <p>Date: <span>{new Date(detail.publishedAt).toLocaleDateString()}</span></p>
                 <img src={detail.urlToImage} alt={`Headshot about ${detail.title}`} />
                 <p className='cat-description'>{detail.description}</p>

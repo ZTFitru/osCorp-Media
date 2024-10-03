@@ -20,7 +20,7 @@ const App = ()=> {
         getTopHeadlineNews()
         .then(data => {
             const newArticles = data.articles
-            const removedArticles = newArticles.filter(news => !news.title.includes('[Removed'))
+            const removedArticles = newArticles.filter(news => !news.title.includes('[Removed]'))
             setApiNews(removedArticles)
         })
         .catch(error => setError(error))
