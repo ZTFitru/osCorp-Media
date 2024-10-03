@@ -39,6 +39,7 @@ const Card = ()=> {
                             </Link>
                             <img src={news.urlToImage || DefaultImg} alt={`Headshot about ${news.title}`} />
                             <p>Date: <span>{new Date(news.publishedAt).toLocaleDateString()}</span></p>
+                            <p>{news.source.name}</p>
                         </div>
                     ))
                 )}

@@ -20,6 +20,7 @@ const Titlepage = ({ apiNews, error })=> {
                                 <h2>{news.title}</h2>
                             </Link>
                                 <img src={news.urlToImage || DefaultImg} alt={`Headshot about ${news.title}`} />
+                                <p>{news.source.name}</p>
                                 <p>{new Date(news.publishedAt).toLocaleString()}</p>
                         </div>
                     ))
