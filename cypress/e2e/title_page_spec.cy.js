@@ -15,7 +15,7 @@ describe('template spec', () => {
     cy.get('h1').should('contain', 'OSCORP MEDIA')
     cy.get('h1').contains('Spider-man').should('not.exist')
     cy.get('ul').children().should('have.length', 7)
-    cy.get('.title-outter > :nth-child(1)').should('contain', 'Top Headlines')
+    cy.get('.title-outter > :nth-child(1)').should('contain', 'TOP HEADLINES')
     cy.get(':nth-child(1) > .article-title > h2').should('be.visible')
     cy.get('.article-cont > :nth-child(1) > img').should('be.visible')
   })
